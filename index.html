@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Calculator</title>
+        <link href="reset.css" type="text/css" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Nova+Round|PT+Sans+Narrow&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <div id="calculator">
+                <div id="display">
+                    <div id="top-line">
+                        <div id="top-line-left">
+                            <p id="top-left-1"></p>
+                            <p id="top-left-2"></p>
+                            <p id="top-left-3"></p>
+                        </div>
+                        <div id="top-line-right">
+                            <p id="top-right-1">mail@graeme.tech</p>
+                            <p id="top-right-2"></p>
+                            <p id="top-right-3"></p>
+                        </div>
+                    </div>
+                    <div id="bottom-line">0</div>
+                </div>
+                <div id="small-buttons">
+                    <div id="back-space" class="smallbutton">&#8678;</div>
+                    <div id="pi" class="smallbutton">π</div>
+                    <div id="x^" class="smallbutton operatorbutton">x^</div>
+                    <div id="root" class="smallbutton">√</div>
+                    <div id="pos-neg" class="smallbutton">+/-</div>
+                </div>
+                <div id="big-buttons">
+                    <div class="button-row">
+                        <div id="clear" class="bigbutton">AC</div>
+                        <div id="MU" class="bigbutton operatorbutton">MU</div>
+                        <div id="%" class="bigbutton operatorbutton">%</div>
+                        <div id="÷" class="bigbutton operatorbutton">÷</div>
+                    </div>
+                    <div class="button-row">
+                        <div id="7" class="bigbutton inputbutton">7</div>
+                        <div id="8" class="bigbutton inputbutton">8</div>
+                        <div id="9" class="bigbutton inputbutton">9</div>
+                        <div id="×" class="bigbutton operatorbutton">×</div>
+                    </div>
+                    <div class="button-row">
+                        <div id="4" class="bigbutton inputbutton">4</div>
+                        <div id="5" class="bigbutton inputbutton">5</div>
+                        <div id="6" class="bigbutton inputbutton">6</div>
+                        <div id="-" class="bigbutton operatorbutton">-</div>
+                    </div>
+                    <div class="buttonrow bottom">
+                        <div id="1" class="bigbutton inputbutton">1</div>
+                        <div id="2" class="bigbutton inputbutton">2</div>
+                        <div id="3" class="bigbutton inputbutton">3</div>
+                        <div id="plus-space" class="bigbutton operatorbutton"><span style="opacity:0;">+</span></div>
+                    </div>
+                    <div class="button-row bottom">
+                        <div id="0" class="bigbutton inputbutton">0</div>
+                        <div id="." class="bigbutton inputbutton">.</div>
+                        <div id="equal" class="bigbutton">=</div>
+                        <div id="+" class="bigbutton operatorbutton">+</div>
+                    </div>
+                </div>
+            </div>
+            <div id="brief">
+                <h2>The Odin Project - Calculator <span style="font-size: 14px;"><a href="https://www.theodinproject.com./courses/web-development-101/lessons/calculator" 
+                        target="_blank">(link)</a></span></h2>
+                <p>Here are some use cases (abilities your project needs to have):</p>
+                <ol>
+                <li>Your calculator is going to contain functions for all of the basic math operators you typically find on simple calculators, 
+                          so start by creating functions for the following items and testing them in your browser’s console.</li>
+                    <ul>
+                        <li>add</li>
+                        <li>subtract</li>
+                        <li>multiply</li>
+                        <li>divide</li>
+                    </ul>
+                <li>Create a new function operate that takes an operator and 2 numbers and then calls one of the above functions on the numbers.</li>
+                <li>Create a basic HTML calculator with buttons for each digit, each of the above functions and an “Equals” key.</li>
+                    <ul>
+                        <li>Do not worry about wiring up the JS just yet.</li>
+                        <li>There should also be a display for the calculator, go ahead and fill it with some dummy numbers so you can get it looking right.</li>
+                        <li>Add a “clear” button.</li>
+                    </ul>
+                <li>Create the functions that populate the display when you click the number buttons… you should be storing the ‘display value’ 
+                          in a variable somewhere for use in the next step.</li>
+                <li>Make the calculator work! You’ll need to store the first number that is input into the calculator when a user presses an operator, 
+                           and also save which operation 
+                          has been chosen and then operate() on them when the user presses the “=” key.</li>
+                    <ul>
+                        <li>You should already have the code that can populate the display, so once operate() has been called, update the display with the ‘solution’ 
+                                 to the operation.</li>
+                        <li>This is the hardest part of the project. You need to figure out how to store all the values and call the operate function with them. 
+                                 Don’t feel bad if it takes you a while to figure out the logic.</li>
+                    </ul>
+                <li>Gotchas: watch out for and fix these bugs if they show up in your code:</li>
+                    <ul>
+                        <li>Users should be able to string together several operations and get the right answer: 12 + 7 - 5 * 3 etc.</li>
+                        <li> You should round answers with long decimals so that they don’t overflow the screen.</li>
+                        <li> Pressing = before entering all of the numbers or an operator could cause problems!</li>
+                        <li>Pressing “clear” should wipe out any existing data.. make sure the user is really starting fresh after pressing “clear”</li>
+                        <li> Display a snarky error message if the user tries to divide by 0… don’t let it crash your calculator!</li>
+                    </ul>
+                <li>EXTRA CREDIT: Users can get floating point numbers if they do the math required to get one, but they can’t type 
+                        them in yet. Add a . button and let users input decimals! Make sure you don’t let them type more than one though: 
+                        12.3.56.5. It is hard to do math on these numbers. (disable the decimal button if there’s already one in the display)</li>
+                <li>EXTRA CREDIT: Make it look nice! This can be a good portfolio project… but not if it’s UGLY. At least make the operations a different color 
+                        from the keypad buttons.</li>
+                <li>EXTRA CREDIT: Add a “backspace” button, so the user can undo if they click the wrong number.</li>
+                <li>EXTRA CREDIT: Add keyboard support!</li>
+                </ol>
+            </div>
+        </div>
+    <script src='script.js'></script> 
+    </body>
+</html>

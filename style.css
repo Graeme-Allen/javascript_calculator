@@ -1,0 +1,129 @@
+@font-face{
+    font-family:'digital-font';
+    src: url('digital-7-mono.ttf');
+}
+
+@font-face{
+    font-family:'digital-font-italic';
+    src: url('digital-7-mono-italic.ttf');
+}
+
+li {
+    font-size: 0.8em;
+    padding: 2px;
+}
+
+.bigbutton {
+    width: 59px;
+    height: 32px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 4px 6px 3px 6px;
+    position: relative;
+    top: 0px;
+    font-family: 'Nova Round', cursive;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    padding: 13px 0 0 0;
+    font-size: 20px;
+    transition: all 0.1s ease;
+}
+
+.button-row {
+    text-align: center;
+    margin-top: 1px;
+}
+
+.bottom{
+    margin-top: 2px;
+}
+
+.pressed {
+    transform: scale(0.95);
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 80%);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.smallbutton {
+    width: 38px;
+    height: 27px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 8px 9px;
+    padding-top: 9px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    font-weight: 800;
+    transition: all 0.1s ease;
+}
+
+#container {
+    display: flex;
+}
+
+#calculator {
+    margin: 10px 25px;
+    width: 340px;
+    height: 500px;
+    padding-top: 105px;
+    background-image: url(calculator.png);
+    background-size: cover;         
+    background-repeat: no-repeat;
+    background-position: top left;  
+    text-align: center;
+    flex: 0 0 340px;
+}
+
+#brief {
+    padding: 5px;
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#display {
+    display: inline-block;
+    padding: 5px;
+    width: 220px;
+    height: 105px;
+}
+
+#top-line {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    font-family: digital-font;
+    font-size: 18px;
+    padding:0;
+}
+
+#top-line-left {
+    float: left;
+    width: 68px;
+    text-align: left;
+    padding-left: 2px;
+}
+
+#top-line-right  {
+    float: right;
+    width: 150px;
+    text-align: right;
+}
+
+#bottom-line {
+    font-size: 50px;
+    text-align: right;
+    font-family: digital-font-italic;
+    padding: 3px;
+}
+
+div#small-buttons {
+    margin: 33px -10px 0 -10px;
+    text-align: center;
+}
+
+div#big-buttons {
+    padding: 1px 0 0 0;
+}
