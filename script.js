@@ -41,7 +41,7 @@ function math(val1, Operator, val2) {
     if (result >= 1000000000) {
         return expo(result,2);
     } else {
-        return +parseFloat(result).toPrecision(7);
+        return +parseFloat(result).toFixed(6);
     }
 };
 
